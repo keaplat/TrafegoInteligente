@@ -47,6 +47,7 @@ jobs:
       run: docker compose up -d --build
 
     - name: Run integration tests
+      working-directory: ./TrafegoInteligenteFIAP
       run: |
         # Aguarde os serviços estarem prontos
         sleep 30
@@ -56,4 +57,5 @@ jobs:
 
     - name: Tear down Docker Compose
       if: always()
+      working-directory: ./TrafegoInteligenteFIAP
       run: docker compose down
