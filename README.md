@@ -23,7 +23,6 @@ Executando com Docker Compose
 Iniciar os serviços:
 
 ```bash
-Copiar código
 docker-compose up -d
 ```
 O parâmetro -d executa os contêineres em segundo plano (modo desacoplado).
